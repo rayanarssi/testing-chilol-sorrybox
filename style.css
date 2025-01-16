@@ -1,23 +1,23 @@
-html,
+html, 
 body {
-	width: 100%;
-	height: auto;
-	font-family: "lores-12", sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "lores-12", sans-serif;
 }
 
 body {
-	background: linear-gradient(#0d1f34, #24122c);
-	background-repeat: no-repeat;
-	min-height: 100vh;
+    background: linear-gradient(#0d1f34, #24122c);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 /* Navbar */
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	padding: 5px 20px;
 	font-family: "lores-12", sans-serif;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -26,7 +26,7 @@ nav {
 nav .logo {
 	color: white;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 2em;
 	font-weight: bold;
 }
 
@@ -45,6 +45,7 @@ ul li {
 ul li a {
 	color: white;
 	text-decoration: none;
+	font-size: 20px;
 	padding: 10px 15px;
 	display: block;
 	transition: background-color 0.3s;
@@ -70,28 +71,29 @@ ul li a {
 
 /* 4-methods */
 .container {
-	margin: 100px 0 0 0;
+	margin: 100px 50px;
 	display: flex;
     flex-direction: row; 
     align-items: center; 
-    justify-content: center; 
-    gap: 400px; 
+    justify-content: center;
+	margin-left: 50px;
+    gap: 100px; 
 }
 
 h1 {
-	font-size: 6rem;
+	font-size: 7rem;
 	color: #ffffff; 
 }
 
 .icons {
 	position: relative;
-	width: 500px;
-	height: 500px; 
+	width: 600px;
+	height: 600px; 
 }
 
 .icon {
-	width: 200px;
-	height: 200px;
+	width: 240px;
+	height: 240px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -102,8 +104,8 @@ h1 {
 }
 
 .icon img {
-	width: 160px;
-	height: 160px;
+	width: 220px;
+	height: 220px;
 	transform: rotate(-45deg); /* Counter-rotate the image to keep it upright */
 }
 
