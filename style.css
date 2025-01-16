@@ -1,237 +1,373 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	font-family: "lores-12", sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: "lores-12", sans-serif;
 }
 
 body {
-	background: linear-gradient(#0d1f34, #24122c);
-	background-repeat: no-repeat;
-	background-size: cover;
+  background: linear-gradient(#0d1f34, #24122c);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-	font-size: 7rem;
-	color: #ffffff;
+  font-size: 7rem;
+  color: #ffffff;
 }
 
 h2 {
-	font-size: 4rem;
-	color: #ffffff;
+  font-size: 4rem;
+  color: #ffffff;
 }
 
 p {
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 /* Navbar */
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px 20px;
-	font-family: "lores-12", sans-serif;
-	padding-left: 50px;
-	padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-family: "lores-12", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 nav .logo {
-	color: white;
-	text-decoration: none;
-	font-size: 2em;
-	font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 nav .logo:hover {
-	color: #e62e5a;
+  color: #e62e5a;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 ul li {
-	position: relative;
+  position: relative;
 }
 
 ul li a {
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
-	padding: 10px 15px;
-	display: block;
-	transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
 }
 
 ul li a:hover {
-	color: #e62e5a;
+  color: #e62e5a;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #24122c;
-	min-width: 150px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #24122c;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content li a {
-	padding: 10px;
-	text-align: left;
+  padding: 10px;
+  text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+  display: block;
 }
 
 /* 4-methods */
 .container {
-	margin: 100px 50px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-left: 50px;
-	gap: 100px;
+  margin: 100px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  gap: 100px;
 }
 
 .icons {
-	position: relative;
-	width: 600px;
-	height: 600px;
+  position: relative;
+  width: 600px;
+  height: 600px;
 }
 
 .icon {
-	width: 240px;
-	height: 240px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid #ffffff;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-	position: absolute;
-	overflow: hidden;
-	transition: transform 0.3s;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  position: absolute;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .icon::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #e62e5a;
-	z-index: 2;
-	opacity: 0;
-	transition: opacity 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e62e5a;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .icon:hover {
-	border-color: #e62e5a;
-	box-shadow: 0 0 25px rgba(230, 46, 90, 0.9);
+  border-color: #e62e5a;
+  box-shadow: 0 0 25px rgba(230, 46, 90, 0.9);
 }
 
 .icon img {
-	width: 220px;
-	height: 220px;
-	transform: rotate(-45deg);
-	position: relative;
-	z-index: 1;
+  width: 220px;
+  height: 220px;
+  transform: rotate(-45deg);
+  position: relative;
+  z-index: 1;
 }
 
 .icon:hover::before {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Custom content for each icon */
 .icon::after {
-	content: "";
-	position: absolute;
-	color: #ffffff;
-	font-size: 2.2rem;
-	z-index: 3;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  font-size: 2.2rem;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: rotate(-45deg);
 }
 
 .icon.heart::after {
-	content: "Feel";
+  content: "Feel";
 }
 
 .icon.sun::after {
-	content: "Paste";
+  content: "Paste";
 }
 
 .icon.robot::after {
-	content: "Chat";
+  content: "Chat";
 }
 
 .icon.origami::after {
-	content: "Create";
+  content: "Create";
 }
 
 .icon:hover::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Position the icons in a diamond shape */
 .icon.heart {
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%) rotate(45deg);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .icon.sun {
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%) rotate(45deg);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .icon.robot {
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%) rotate(45deg);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .icon.origami {
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%) rotate(45deg);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 /* Sticker-page */
 
 .loading-container {
-	text-align: center;
-	margin-top: 60px;
-	opacity: 0;
-	transition: opacity 3s ease-in-out;
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
 .loading-container.show {
-	opacity: 1;
+  opacity: 1;
 }
 .loading-icon img {
-	width: 400px;
-	height: auto;
+  width: 400px;
+  height: auto;
 }
 
 .loading-text h2 {
-	margin: 0px;
+  margin: 0px;
 }
 
 .loading-text p {
-	color: #ffffff;
-	font-size: 40px;
-	margin: 5px;
+  color: #ffffff;
+  font-size: 40px;
+  margin: 5px;
+}
+
+/* Sorrybot */
+
+.sorrybot {
+  position: fixed;
+  top: 50px;
+  left: 10%;
+  width: 80%;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sorrybot section {
+  padding: 20px 0;
+  color: white;
+}
+
+.sorrybot .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sorrybot .back-button {
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.sorrybot h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.sorrybox {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sorrybox::-webkit-scrollbar {
+  display: none;
+}
+
+.sorrybox .chat {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.smart-toy-icon {
+  height: 40px;
+  width: 50px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.sorrybox .chat p {
+  color: white;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  padding: 15px;
+  max-width: 75%;
+}
+
+.sorrybox .incoming p {
+  color: white;
+  background: transparent;
+}
+
+.sorrybox .outgoing {
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.sorrybox .outgoing p {
+  color: black;
+  background: white;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.chat-input textarea {
+  flex: 1;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.chat-input img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #24122c;
+  cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  .sorrybot {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sorrybot .sorrybox {
+    height: 90%;
+  }
+
+  section span {
+    display: block;
+  }
 }
