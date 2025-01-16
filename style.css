@@ -1,5 +1,133 @@
-html, body{
-    width: 100%;
-    margin: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+	width: 100%;
+	height: auto;
+	font-family: "lores-12", sans-serif;
+}
+
+body {
+	background: linear-gradient(#0d1f34, #24122c);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+/* Navbar */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	font-family: "lores-12", sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+nav .logo {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+ul li {
+	position: relative;
+}
+
+ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	transition: background-color 0.3s;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #24122c;
+	min-width: 150px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content li a {
+	padding: 10px;
+	text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* 4-methods */
+.container {
+	margin: 100px 0 0 0;
+	display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 400px; 
+}
+
+h1 {
+	font-size: 6rem;
+	color: #ffffff; 
+}
+
+.icons {
+	position: relative;
+	width: 500px;
+	height: 500px; 
+}
+
+.icon {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #ffffff;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+	position: absolute;
+	transition: transform 0.3s;
+}
+
+.icon img {
+	width: 160px;
+	height: 160px;
+	transform: rotate(-45deg); /* Counter-rotate the image to keep it upright */
+}
+
+/* Position the icons in a diamond shape */
+.icon.heart {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.icon.sun {
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.icon.robot {
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.icon.origami {
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
 }
