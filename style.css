@@ -22,10 +22,6 @@ h2 {
   color: #ffffff;
 }
 
-p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
 /* Navbar */
 
 nav {
@@ -49,7 +45,7 @@ nav .logo:hover {
   color: #e62e5a;
 }
 
-ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
