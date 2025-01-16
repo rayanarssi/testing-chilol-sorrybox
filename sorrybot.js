@@ -1,8 +1,6 @@
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const sorrybox = document.querySelector(".sorrybox");
-const sorrybotToggler = document.querySelector(".sorrybot-toggler");
-const sorrybotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 const API_KEY = "AIzaSyDBvuW6a8or9z-Si1TeipBcGFQ4-odr_E0";
@@ -15,7 +13,7 @@ const createChatLi = (message, className) => {
   let chatContent =
     className === "outgoing"
       ? `<p></p>`
-      : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+      : `<img src="./images/sorrybot.png" alt="Smart Toy Icon" class="smart-toy-icon" /><p>${message}</p>`;
   chatLi.innerHTML = chatContent;
   chatLi.querySelector("p").textContent = message;
   return chatLi;
@@ -87,9 +85,3 @@ chatInput.addEventListener("keydown", (e) => {
 });
 
 sendChatBtn.addEventListener("click", handleChat);
-sorrybotToggler.addEventListener("click", () =>
-  document.body.classList.toggle("show-sorrybot")
-);
-sorrybotCloseBtn.addEventListener("click", () =>
-  document.body.classList.remove("show-sorrybot")
-);
