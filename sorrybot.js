@@ -13,7 +13,7 @@ const createChatLi = (message, className) => {
   let chatContent =
     className === "outgoing"
       ? `<p></p>`
-      : `<img src="./images/sorrybot.png" alt="Smart Toy Icon" class="smart-toy-icon" /><p>${message}</p>`;
+      : `<img src="./icons/Chatbot.png" alt="Smart Toy Icon" class="smart-toy-icon" /><p></p>`;
   chatLi.innerHTML = chatContent;
   chatLi.querySelector("p").textContent = message;
   return chatLi;
