@@ -11,7 +11,65 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Navbar */
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-family: "lores-12", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #24122c;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sorrybot */
 .sorrybot-toggler {
   position: fixed;
   right: 40px;
@@ -47,7 +105,7 @@ body {
 .sorrybot {
   position: fixed;
   right: 40%;
-  bottom: 20%;
+  bottom: 3%;
   width: 420px;
   transform: scale(0.5);
   opacity: 0;
