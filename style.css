@@ -30,6 +30,10 @@ nav .logo {
 	font-weight: bold;
 }
 
+nav .logo:hover {
+	color: #e62e5a;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -49,6 +53,10 @@ ul li a {
 	padding: 10px 15px;
 	display: block;
 	transition: background-color 0.3s;
+}
+
+ul li a:hover {
+	color: #e62e5a;
 }
 
 .dropdown-content {
