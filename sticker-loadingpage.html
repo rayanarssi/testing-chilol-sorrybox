@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/sid3fky.css" />
+		<script>
+			window.onload = function () {
+				const content = document.querySelector(".loading-container");
+
+				setTimeout(function () {
+					content.classList.add("show");
+				}, 0);
+
+				setTimeout(function () {
+					window.location.href = "./sticker-page";
+				}, 3000);
+			};
+		</script>
+		<!-- https://chatgpt.com/share/6788e0be-ec60-8004-92fe-271724db49fb -->
+	</head>
+	<body>
+		<div>
+			<div class="loading-container">
+				<div class="loading-icon"><img src="/icons/Sticker.png" alt="" /></div>
+				<div class="loading-text">
+					<h2>Welkom bij de Sticker Maker</h2>
+					<p>Maak je excuses onvergetelijk?</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

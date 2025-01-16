@@ -11,6 +11,21 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+h1 {
+	font-size: 7rem;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 4rem;
+	color: #ffffff;
+}
+
+p {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 /* Navbar */
 
 nav {
@@ -86,11 +101,6 @@ ul li a:hover {
 	justify-content: center;
 	margin-left: 50px;
 	gap: 100px;
-}
-
-h1 {
-	font-size: 7rem;
-	color: #ffffff;
 }
 
 .icons {
@@ -197,4 +207,31 @@ h1 {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%) rotate(45deg);
+}
+
+/* Sticker-page */
+
+.loading-container {
+	text-align: center;
+	margin-top: 60px;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+.loading-container.show {
+	opacity: 1;
+}
+.loading-icon img {
+	width: 400px;
+	height: auto;
+}
+
+.loading-text h2 {
+	margin: 0px;
+}
+
+.loading-text p {
+	color: #ffffff;
+	font-size: 40px;
+	margin: 5px;
 }
